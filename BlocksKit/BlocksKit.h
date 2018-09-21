@@ -25,7 +25,7 @@
 //  THE SOFTWARE.
 //
 
-#import <Foundation/Foundation.h>
+#import <Foundation/Foundation.h"
 
 //! Project version number for BlocksKit.
 FOUNDATION_EXPORT double BlocksKitVersionNumber;
