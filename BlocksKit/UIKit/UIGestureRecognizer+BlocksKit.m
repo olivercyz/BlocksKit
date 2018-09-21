@@ -60,7 +60,9 @@ static const void *BKGestureRecognizerShouldHandleActionKey = &BKGestureRecogniz
 	};
 
 	self.bk_shouldHandleAction = YES;
-
+    if (delay == 0) {
+        block();
+    }
     [NSObject bk_performAfterDelay:delay usingBlock:block];
 }
 
