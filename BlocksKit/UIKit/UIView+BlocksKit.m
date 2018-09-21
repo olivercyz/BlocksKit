@@ -13,11 +13,7 @@
 	if (!block) return;
 	
 	UITapGestureRecognizer *gesture = [UITapGestureRecognizer bk_recognizerWithHandler:^(UIGestureRecognizer *sender, UIGestureRecognizerState state, CGPoint location) {
-        if (@available(iOS 12.0, *)) {
-            if (state == UIGestureRecognizerStatePossible) {
-                block();
-            }
-        } else if (state == UIGestureRecognizerStateRecognized) {
+        if (state == UIGestureRecognizerStatePossible) {
             block();
         }
 		
